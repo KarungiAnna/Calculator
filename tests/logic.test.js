@@ -1,4 +1,4 @@
-import { calculate } from "../src/logic.js";
+import { calculate } from "./src/logic.js";
 
 test("adds numbers correctly", () => {
   expect(calculate("2+3")).toBe(5);
