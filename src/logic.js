@@ -9,4 +9,3 @@ function calculate(expression) {
 
 // Expose globally (for browsers that isolate scope)
 window.calculate = calculate;
-console.log("Logic module loaded.");
