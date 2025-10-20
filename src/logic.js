@@ -1,5 +1,5 @@
 // Define globally so app.js can access it
-function calculate(expression) {
+export function calculate(expression) {
   if (!/^[0-9+\-*/.() ]+$/.test(expression)) {
     throw new Error("Invalid input");
   }
@@ -8,4 +8,6 @@ function calculate(expression) {
 }
 
 // Expose globally (for browsers that isolate scope)
-window.calculate = calculate;
+if (typeof window !== 'undefined') {
+  window.calculate = calculate;
+}
