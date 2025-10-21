@@ -3,24 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./src/style.css"/>
+    <meta name="description" content="calculator" />
+    <meta name="author" content="Bernard Byrnes" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>calculator</title>
   </head>
   <body>
-    <div class="calculator">
-      <input type="text" id="display" readonly />
-      <div class="buttons">
-        <button>7</button><button>8</button><button>9</button
-        ><button>/</button> <button>4</button><button>5</button
-        ><button>6</button><button>*</button> <button>1</button
-        ><button>2</button><button>3</button><button>-</button>
-        <button>0</button><button>.</button><button>=</button><button>+</button>
-        <button id="clear">C</button>
+    <div class="container">
+      <div class="calculator">
+        <input type="text" class="screen" />
+        <button type="button" class="btn clear" data-num="c">c</button>
+        <button type="button" class="btn" data-num="/">/</button>
+        <button type="button" class="btn" data-num="7">7</button>
+        <button type="button" class="btn" data-num="8">8</button>
+        <button type="button" class="btn" data-num="9">9</button>
+        <button type="button" class="btn" data-num="*">*</button>
+        <button type="button" class="btn" data-num="4">4</button>
+        <button type="button" class="btn" data-num="5">5</button>
+        <button type="button" class="btn" data-num="6">6</button>
+        <button type="button" class="btn" data-num="-">-</button>
+        <button type="button" class="btn" data-num="1">1</button>
+        <button type="button" class="btn" data-num="2">2</button>
+        <button type="button" class="btn" data-num="3">3</button>
+        <button type="button" class="btn" data-num="+">+</button>
+        <button type="button" class="btn" data-num="0">0</button>
+        <button type="button" class="btn" data-num="00">00</button>
+        <button type="button" class="btn" data-num=".">.</button>
+        <button type="button" class="equal" data-num="=">=</button>
       </div>
     </div>
-
-    <!-- Scripts should load AFTER the elements -->
-    <script src="./src/logic.js"></script>
-    <script type="module" src="./src/app.js"></script>
   </body>
 </html>
